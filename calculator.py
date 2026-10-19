@@ -1,4 +1,6 @@
 def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
     return a / b
 
 def calculate_average(numbers):
@@ -20,10 +22,8 @@ def main():
     print("Average:", calculate_average(nums))
     print("Division:", divide(10, 0))
 
-def multiply(a,b):
-    result=a*b
-    unused_var = 99
-    return result
+def multiply(a, b):
+    return a * b
 
 if __name__ == "__main__":
     main()
